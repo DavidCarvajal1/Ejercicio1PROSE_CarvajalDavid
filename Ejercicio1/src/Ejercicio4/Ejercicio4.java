@@ -6,12 +6,12 @@ import java.io.IOException;
 public class Ejercicio4 {
     public static void main(String[] args) {
         //Directorio donde se encuentra la clase ProcesoLento
-        File directorio=new File("C:\\Users\\dcarvajal\\Documents\\Segundo\\Procesos\\Tema1\\Ejercicio1\\src\\Ejercicio4");
+        File directorio=new File("src\\Ejercicio4");
         //Proceso que ejecutara la clase ProcesoLento
         ProcessBuilder pb=new ProcessBuilder("java", "ProcesoLento.java");
         Process p;
         pb.directory(directorio);
-        pb.redirectOutput(new File("C:\\Users\\dcarvajal\\Documents\\Segundo\\Procesos\\Tema1\\Ejercicio1\\src\\Ejercicio4\\salidaProcesoLento.txt"));
+        pb.redirectOutput(new File("src\\Ejercicio4\\salidaProcesoLento.txt"));
         try {
             p = pb.start();//Iniciamos el proceso
 

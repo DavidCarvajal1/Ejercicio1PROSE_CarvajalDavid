@@ -18,8 +18,8 @@ public class Ejercicio3 {
         pb.inheritIO();
         try{
             p=pb.start();
-            int code= p.waitFor();
-            System.out.println(code);
+            p.waitFor();
+            System.out.println("Proceso terminado");
         }catch (Exception e){
             e.printStackTrace();
         }
