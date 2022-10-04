@@ -9,10 +9,11 @@ public class Ejercicio2 {
         File directorio=new File("src\\Ejercicio2");
         //Proceso que ejecutara la clase ProcesoLento
         ProcessBuilder pb=new ProcessBuilder("java", "ProcesoLento.java");
+        Process p;
         pb.directory(directorio);
         pb.inheritIO();
         try {
-            Process p = pb.start();//Iniciamos el proceso
+            p = pb.start();//Iniciamos el proceso
 
             while (p.isAlive()){//Comprobamos si sigue vivo
                 System.out.println("El porceso sigue activo");
