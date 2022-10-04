@@ -10,6 +10,7 @@ public class TicketCompra {
         codigoProducto= sc.nextInt();
         precioProducto=sc.nextDouble();
         cantidad=sc.nextInt();
+        sc.close();
         System.out.println(codigoProducto+" - "+precioProducto+" - "+cantidad+" - "+(precioProducto*cantidad));
     }
 }
