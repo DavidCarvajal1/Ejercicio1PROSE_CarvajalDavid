@@ -12,7 +12,7 @@ public class Ejercicio3 {
         String lectura;
 
         System.out.printf("Introduzca el comando");
-        lectura=sc.next();
+        lectura=sc.nextLine();
         String [] comandos=lectura.split(" ");
         pb=new ProcessBuilder(comandos);
         pb.inheritIO();
