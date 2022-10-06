@@ -8,7 +8,7 @@ public class Clase1 {
             num2 = (int) (Math.random() * 255);
             num3 = (int) (Math.random() * 255);
             num4 = (int) (Math.random() * 255);
-            System.out.printf("%d . %d . %d . %d",num1,num2,num3,num4);
+            System.out.printf("%d,%d,%d,%d",num1,num2,num3,num4);
             System.out.print(System.lineSeparator());
         }
     }

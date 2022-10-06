@@ -11,7 +11,7 @@ public class Clase2 {
         int clase;
         for (int i = 0; i < 10; i++) {
             ip=sc.nextLine();
-            clase=Integer.parseInt(ip.split(" . ")[1]);
+            clase=Integer.parseInt(ip.split(",")[0]);
             if(clase<224){
                 System.out.println(ip);
             }
