@@ -15,6 +15,7 @@ public class Ejercicio7 {
         lpb.add(new ProcessBuilder("java", "src\\Ejercicio7\\Clase2.java").redirectError(ProcessBuilder.Redirect.INHERIT));
         lpb.add(new ProcessBuilder("java", "src\\Ejercicio7\\Clase3.java").redirectError(ProcessBuilder.Redirect.INHERIT).redirectOutput(salida));
 
+
         //Ejecutamos la lista de procesos
         try {
             ProcessBuilder.startPipeline(lpb);
