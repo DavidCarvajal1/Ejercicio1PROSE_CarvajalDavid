@@ -11,13 +11,16 @@ public class Ejercicio8 {
             p=r.exec(new String[]{"java","src\\Ejercicio8\\ProcesoLento.java"});
             InputStream is= p.getInputStream();
             BufferedReader lector=new BufferedReader(new InputStreamReader(is));
+            BufferedWriter escritor=new BufferedWriter(new FileWriter("src\\Ejercicio8\\salida.txt"));
             linea=lector.readLine();
             while(linea!=null){
-                System.out.println(linea);
+                escritor.write(linea);
+                escritor.newLine();
                 linea=lector.readLine();
             }
             is.close();
             lector.close();
+            escritor.close();
 
 
         }catch (Exception e){
